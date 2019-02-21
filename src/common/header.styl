@@ -1,0 +1,81 @@
+
+headerHeight = 3rem
+logoWidth = 17rem
+
+.header
+  width: 100%
+  height: headerHeight
+  line-height: headerHeight
+  color: headerColor
+  font-size: 1.5rem
+  font-weight: normal
+  background-color: defaultThemeColor
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 99
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.3)
+
+// header logo
+.header--logobox
+  height: headerHeight
+  width: logoWidth
+  line-height: headerHeight
+
+.header .header--logo
+  width: 100%
+  height: headerHeight
+  line-height: headerHeight
+  display: block
+  color: headerColor
+  text-align: center
+
+// header nav
+.header--nav
+  height: headerHeight
+  position: absolute
+  top: 0
+  left: logoWidth
+
+.nav--menu
+  height: headerHeight
+  vertical-align: top
+
+.nav--item
+  height: headerHeight
+  display inline-block
+  vertical-align: top
+
+.nav--item a
+  height: headerHeight
+  line-height: headerHeight
+  display: block
+  color: headerColor
+  font-size: 1.2rem
+  padding: 0 0.8rem
+
+.nav--item-actived a
+  color: defaultThemeColor
+  background-color: headerColor
+
+// mobile button
+.header--mobilenav
+  display: none
+  width: 3rem
+  height: 3rem
+  position: absolute
+  top: 0
+  right: 0
+  cursor: pointer
+
+.mobilenav--btn
+  width: 1rem
+  height: 0.75rem
+  display: block
+  border-top: 0.15rem solid headerColor
+  border-bottom: 0.15rem solid headerColor
+  background-color: headerColor
+  padding: 0.15rem 0
+  margin: 1.125rem auto 0
+  background-clip: content-box
+
